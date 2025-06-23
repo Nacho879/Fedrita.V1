@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 5% 96%; /* #F5F5F5 */
+    --foreground: 210 29% 27%; /* #33475B */
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 27%;
+
+    --primary: 13 100% 67%; /* #FF7A59 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 13 100% 97%; /* #FFF1EE */
+    --secondary-foreground: 210 29% 27%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 13 100% 97%; /* #FFF1EE */
+    --accent-foreground: 210 29% 27%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%; /* #E0E0E0 */
+    --input: 0 0% 88%;
+    --ring: 13 100% 67%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-hub-coral text-white font-semibold rounded-md shadow-hub hover:bg-hub-coral-hover focus-visible:ring-hub-coral transition-colors duration-300;
+  }
+}
